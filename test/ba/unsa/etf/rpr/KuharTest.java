@@ -1,4 +1,4 @@
-/*package ba.unsa.etf.rpr;
+package ba.unsa.etf.rpr;
 
 import org.junit.jupiter.api.Test;
 
@@ -137,7 +137,7 @@ class KuharTest {
         assertEquals(2, recepti.size());
     }
 
-    @Test
+   @Test
     public void sviSastojciTest() {
         Kuhar kuhar = new Kuhar();
         Set<Sastojak> sastojci = kuhar.sviSastojci();
@@ -180,7 +180,7 @@ class KuharTest {
         assertEquals(rezultat, ocekivani);
     }
 
-    @Test
+   @Test
     public void filtrirajTest() {
         Kuhar kuhar = pomocnaKuhar();
         ArrayList<Recept> recepti = kuhar.filtriraj(r -> r.getNazivJela().contains("k"));
@@ -194,4 +194,4 @@ class KuharTest {
         assertEquals(1, recepti.size());
         assertEquals("Uštipci", recepti.get(0).getNazivJela());
     }
-}*/
+}

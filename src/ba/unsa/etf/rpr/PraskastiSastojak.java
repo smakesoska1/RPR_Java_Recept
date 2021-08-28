@@ -9,4 +9,8 @@ public class PraskastiSastojak extends Sastojak {
     public String toString(){
         return getKolicina()+" g "+getNaziv();
     }
+    @Override
+    public int compareTo(Sastojak sastojak) {
+        return Double.compare(getKolicina(), sastojak.getKolicina());
+    }
 }

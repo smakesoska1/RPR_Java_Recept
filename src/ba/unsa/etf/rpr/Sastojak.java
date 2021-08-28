@@ -1,6 +1,6 @@
 package ba.unsa.etf.rpr;
 
-public class Sastojak {
+public abstract class Sastojak implements Comparable<Sastojak>{
     private String naziv;
     private int kolicina=0;
 
@@ -24,4 +24,6 @@ public class Sastojak {
     public void setKolicina(int kolicina) {
         this.kolicina = kolicina;
     }
+
+
 }

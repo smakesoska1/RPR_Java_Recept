@@ -9,4 +9,10 @@ public class TecniSastojak extends Sastojak {
     public String toString(){
         return getKolicina()+" dl "+getNaziv();
     }
+
+        @Override
+        public int compareTo(Sastojak sastojak) {
+            return Double.compare(getKolicina(), sastojak.getKolicina());
+        }
+
 }

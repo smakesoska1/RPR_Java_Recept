@@ -59,6 +59,4 @@ public class Recept {
                 "\n" + (vrstaPripreme == VrstaPripreme.PECENJE ? "Peći na "+podatak+" stepeni" :
                 vrstaPripreme == VrstaPripreme.KUHANJE ? "Kuhati "+podatak+" minuta" : "Pržiti " + podatak + " minuta");
     }
-
-
 }
